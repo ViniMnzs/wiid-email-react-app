@@ -1,6 +1,22 @@
 /* eslint-disable import/prefer-default-export */
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import Switch from '@material-ui/core/Switch';
+
+export const GlobalStyles = createGlobalStyle`
+    * {
+        background-color: ${(props) => (props.theme ? '#282a36' : '#FFF')};
+        color: ${(props) => (props.theme ? '#FFF' : '#000')};
+    }
+`;
+
+export const Interruptor = styled(Switch)`
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    color: rgba(255, 128, 0, 0.5);
+    margin-left: 10px;
+
+`;
 
 export const Container = styled.div`
     height: 30vh;
@@ -23,7 +39,7 @@ export const Line = styled.div`
 export const Search = styled.input`
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 60%;
     height: 5vh;
     border: 0.5px solid black;
     border-radius: 5px;
