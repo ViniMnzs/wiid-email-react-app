@@ -6,7 +6,7 @@
     </br>
     <p>Comments: I was not able to implement the function of archiving email and regulating the width of the menu.</p>
     </br>
-    <p>Technologies/libs used: react.js, hooks, eslint, styled-components, moment, axios, </p>
+    <p>Technologies/libs used: react.js, hooks, eslint, styled-components, moment, axios. </p>
     </br>
     <p>Thank you!</p>
 </ul>
